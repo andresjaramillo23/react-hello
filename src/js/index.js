@@ -1,6 +1,7 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
+import NavBar from "./component/NavBar";
 
 //include bootstrap npm library into the bundle
 import "bootstrap";
@@ -12,4 +13,4 @@ import "../styles/index.scss";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<NavBar />, document.querySelector("#app"));
