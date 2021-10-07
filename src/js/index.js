@@ -2,6 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import NavBar from "./component/NavBar";
+import Jumbotron from "./component/Jumbotron";
 
 //include bootstrap npm library into the bundle
 import "bootstrap";
@@ -13,4 +14,9 @@ import "../styles/index.scss";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<NavBar />, document.querySelector("#app"));
+ReactDOM.render(
+	<>
+		<NavBar /> <Jumbotron />
+	</>,
+	document.querySelector("#app")
+);
